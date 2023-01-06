@@ -14,14 +14,14 @@ import { listProducts } from './app/useCases/products/listProducts';
 export const router = Router();
 
 const upload = multer({
-    storage: multer.diskStorage({
-        destination(req, file, callback) {
-            callback(null, path.resolve(__dirname,'..', 'uploads'));
-        },
-        filename(req, file, callback) {
-            callback(null, `${Date.now()}-${file.originalname}`);
-        },
-    }),
+  storage: multer.diskStorage({
+    destination(req, file, callback) {
+      callback(null, path.resolve(__dirname,'..', 'uploads'));
+    },
+    filename(req, file, callback) {
+      callback(null, `${Date.now()}-${file.originalname}`);
+    },
+  }),
 });
 
 router.get('/categories', listCategories);
