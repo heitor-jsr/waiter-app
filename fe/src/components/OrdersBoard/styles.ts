@@ -9,7 +9,8 @@ export const Board = styled.div`
   align-items: center;
   justify-content: center;
   flex: 1;
-  header {
+
+  > header {
     padding: 8px;
     font-size: 14px;
     display: flex;
@@ -23,6 +24,7 @@ display: flex;
 flex-direction: column;
 width: 100%;
 margin-top: 24px;
+
   button {
     background: #fff;
     height: 128px;
@@ -34,13 +36,16 @@ margin-top: 24px;
     justify-content: center;
     align-items: center;
     gap: 4px;
+
     strong {
       font-weight: 500;
     }
+
     span {
       font-size: 14px;
       color: #666;
     }
+
     & + button {
       margin-top: 24px;
     }
