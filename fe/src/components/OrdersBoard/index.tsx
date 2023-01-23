@@ -30,6 +30,7 @@ export function OrdersBoard({ icon, title, orders, onCancelOrder, onChangeOrderS
 
 
   async function handleChangeOrderStatus() {
+    if (!selectedOrder) return;
     setIsLoading(true);
 
     const status = selectedOrder?.status === 'WAITING' ? 'IN_PRODUCTION' : 'DONE';
