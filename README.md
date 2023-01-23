@@ -22,7 +22,7 @@ Foram usadas as tecnologias e ferramentas abaixo:
 
    ```
    - Clone esse repositório:
-   $ git clone https://github.com/heitor-jsr/waiterapp.git
+   $ git clone https://github.com/heitor-jsr/waiter-app.git
 
    - Entre no diretório:
    $ cd waiter-app
